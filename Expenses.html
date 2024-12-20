@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <title>Интернет магазин</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Интернет магазин</h1>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="order.html">Покупка</a></li>
+                <li class="dropdown">
+                    <a href="#">Таблицы</a>
+                    <div class="dropdown-content">
+                        <a href="Departmenti.html">Товары</a>
+                        <a href="Expenses.html">Клиенты</a>
+                        <a href="Types_of_expenses.html">Продажи</a>
+                    </div>
+                </li>
+                <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Покупка</a></li>
+                    <li class="dropdown">
+                        <a href="#">Таблицы</a>
+                        <div class="dropdown-content">
+                            <a href="Departmenti.html">Товары</a>
+                            <a href="Expenses.html">Клиенты</a>
+                            <a href="Types_of_expenses.html">Продажи</a>
+                        </div>
+                    </li>
+                    <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+            
+
+                <h2>Клиенты</h2>
+                <table class="department-table">
+                    <tr>
+                        <th>Код клиента</th>
+                        <th>Фамилие</th>
+                        <th>Имя</th>
+                        <th>Отчество</th>
+                        <th>Адрес</th>
+                        <th>Телефон</th>
+                        <th>Признак постоянного клиента</th>
+                    </tr>
+                    <tr>
+                        <td>564</td>
+                        <td>Иванов</td>
+                        <td>Андрей</td>
+                        <td>Шарикович</td>
+                        <td>Г.Лукоянов Ул.Новое начинание Д.96</td>
+                        <td>89026816277</td>
+                        <td>Нет</td>
+                    </tr>
+                    <tr>
+                        <td>245</td>
+                        <td>Петров</td>
+                        <td>Алексей</td>
+                        <td>Квазимудович</td>
+                        <td>Г.Лукоянов Ул.Колхозная Д.15</td>
+                        <td>89026816277</td>
+                        <td>Да</td>
+                    </tr>
+                    <tr>
+                        <td>2688</td>
+                        <td>Сидоров</td>
+                        <td>Виталий</td>
+                        <td>Филофеевич</td>
+                        <td>Г.Лукоянов Ул.Заводская Д.19 кв 1</td>
+                        <td>89026816277</td>
+                        <td>Да</td>
+                    </tr>
+                </table>
+
+            </main>
+        </div>
+        <footer>
+            &copy; <strong><em>Бухгалтерия рулит</em></strong>
+            <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+            <button id="logout-btn" class="logout-button">Выйти</button>
+        </footer>
+            <script>
+                function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+                document.getElementById('logout-btn').addEventListener('click', () => {
+                window.location.href = 'AuthPage.html';
+                });
+            </script>
+    </section> 
+</body>
+</html>
