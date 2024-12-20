@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+    <div id="loginSection">
+        <h1>Авторизация</h1>
+        <form id="authForm">
+            <input type="text" class="auth-input" id="username" placeholder="Логин" required>
+            <input type="password" class="auth-input" id="password" placeholder="Пароль" required>
+            <button type="submit" class="auth-button">Войти</button>
+        </form>
+        <button class="auth-toggle-button" onclick="showRegisterForm()">Нет аккаунта? Зарегистрироваться</button>
+        <button class="auth-toggle-button" onclick="goToIndex()">ㅤ</button>
+    </div>
+
+    <div id="registerSection" style="display: none;">
+        <h1>Регистрация</h1>
+        <form id="registrationForm">
+            <input type="text" class="auth-input" id="newUsername" placeholder="Новый логин" required>
+            <input type="password" class="auth-input" id="newPassword" placeholder="Новый пароль" required>
+            <button type="submit" class="auth-button">Зарегистрироваться</button>
+        </form>
+        <button class="auth-toggle-button" onclick="showLoginForm()">Уже есть аккаунт? Войти</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('authForm').onsubmit = function(event) {
+        event.preventDefault();
+        // Логика авторизации
+        window.location.href = 'index.html';
+    };
+
+    document.getElementById('registrationForm').onsubmit = function(event) {
+        event.preventDefault();
+        // Логика регистрации (можно добавить здесь)
+        showLoginForm(); // Показать форму входа
+    };
+
+    function showRegisterForm() {
+        document.getElementById('loginSection').style.display = 'none';
+        document.getElementById('registerSection').style.display = 'block';
+    }
+
+    function showLoginForm() {
+        document.getElementById('registerSection').style.display = 'none';
+        document.getElementById('loginSection').style.display = 'block';
+    }
+
+    function goToIndex() {
+        window.location.href = 'index.html'; // Переход на главную страницу
+    }
+</script>
+
+</body>
+</html>
