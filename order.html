@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <title>Интернет магазин</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>«Интернет-магазина»</h1>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="order.html">Покупка</a></li>
+                <li class="dropdown">
+                    <a href="#">Таблицы</a>
+                    <div class="dropdown-content">
+                        <a href="Departmenti.html">Товары</a>
+                        <a href="Expenses.html">Клиенты</a>
+                        <a href="Types_of_expenses.html">Продажи</a>
+                    </div>
+                </li>
+                <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Покупка</a></li>
+                    <li class="dropdown">
+                        <a href="#">Таблицы</a>
+                        <div class="dropdown-content">
+                            <a href="Departmenti.html">Товары</a>
+                            <a href="Expenses.html">Клиенты</a>
+                            <a href="Types_of_expenses.html">Продажи</a>
+                        </div>
+                    </li>
+                    <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+                </ul>
+            </nav>
+            
+            <main class="content">
+
+
+        <section class="order-form-container">
+
+            <h2>Оформление заказа</h2>
+
+            <form action="#" method="post">
+                <table id="data-table">
+                    <tbody id="data-body">
+                        <tr id="row-surname">
+                            <th id="header-surname">Фамилия</th>
+                            <td id="cell-surname"><input type="text" name="surname" required></td>
+                        </tr>
+                        <tr id="row-name">
+                            <th id="header-name">Имя</th>
+                            <td id="cell-name"><input type="text" name="name" required></td>
+                        </tr>
+                        <tr id="row-patronymic">
+                            <th id="header-patronymic">Отчество</th>
+                            <td id="cell-patronymic"><input type="text" name="patronymic" required></td>
+                        </tr>
+                        <tr id="row-password">
+                            <th id="header-password">Пароль</th>
+                            <td id="cell-password"><input type="password" name="password" required></td>
+                        </tr>
+                       
+                        <tr id="row-expense-type">
+                            <th id="header-expense-type">Вид покупки</th>
+                            <td id="cell-expense-type">
+                                <select name="expense_type" required>
+                                    <option value="Одежда">Одежда</option>
+                                    <option value="Спец форма">Спец форма</option>
+                                    <option value="Детская одежда">Детская одежда</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr id="row-description">
+                            <th id="header-description">Описание</th>
+                            <td id="cell-description"><input type="text" name="description"></td>
+                        </tr>
+                        <tr id="row-payment-method">
+                            <th id="header-payment-method">Способ оплаты</th>
+                            <td id="cell-payment-method">
+                                <div class="payment-method">
+                                    <label><input type="radio" name="payment_method" value="наличный" required> Наличный расчет</label>
+                                    <label><input type="radio" name="payment_method" value="безналичный"> Безналичный расчет</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="row-price">
+                            <th id="header-price">Цена</th>
+                            <td id="cell-price"><input type="number" name="price" required step="0.01"></td>
+                        </tr>
+                        <tr id="row-submit">
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit" class="submit-button">Отправить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </section>
+          
+
+    </main>
+</div>
+<footer>
+    &copy; <strong><em>Бухгалтерия рулит</em></strong>
+    <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+    <button id="logout-btn" class="logout-button">Выйти</button>
+</footer>
+    <script>
+        function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        document.getElementById('logout-btn').addEventListener('click', () => {
+        window.location.href = 'AuthPage.html';
+        });
+    </script>
+</section> 
+</body>
+</html>
