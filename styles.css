@@ -21,7 +21,6 @@ html, body {
     margin: 0 auto; /* Выравнивание по центру */
     background: #dcb7b7; /* Цвет фона контейнера */
     opacity: 0.98; /* Полупрозрачность кнопки */
-    border-radius: 12px; /* Скругление углов */
     overflow: hidden; /* Скрываем переполнение */
     margin: 15px auto 0; /* Отступ сверху 20px, выравнивание по центру */
     }
@@ -34,7 +33,7 @@ header {
     margin-bottom: 7px;
     font-size: 1.5em; /* Размер текста для верхнего заголовка */
     text-align: center; /* Выравнивание по центру */
-    padding: 2px; /* Отступы вокруг текста */
+    padding: 6px; /* Отступы вокруг текста */
     background: linear-gradient(135deg, #4f5dfc, #431a7c); /* Диагональный линейный градиент */
     color: #ffe; /* Цвет текста */
     border-radius: 12px; /* Скругление углов */
