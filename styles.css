@@ -103,17 +103,7 @@ nav {
 }
 
 /*?  ГОРИЗОНТАЛЬНОЕ МЕНЮ */
-.horizontal-menu {
-    display: flex;
-    padding: 10px 0;
-    color: #fff;
-    width: 985px;
-    transition: height 0.3s ease;
-    background: linear-gradient(to bottom, rgb(255, 2, 2), rgb(255, 35, 134)), url('background-image.jpg');
-    position: relative;
-    height: 30px;
-    overflow: visible;
-}
+
 
 /*?  СТИЛИ ДЛЯ ВЫПАДАЮЩЕГО ГР МЕНЮ */
 .horizontal-menu ul {
