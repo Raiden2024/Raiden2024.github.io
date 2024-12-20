@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <title>Интернет магазин</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Инетернет магазин</h1>
+        </header>
+
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="order.html">Покупка</a></li>
+                <li class="dropdown">
+                    <a href="#">Таблицы</a>
+                    <div class="dropdown-content">
+                        <a href="Departmenti.html">Товары</a>
+                        <a href="Expenses.html">Клиенты</a>
+                        <a href="Types_of_expenses.html">Продажи</a>
+                    </div>
+                </li>
+                <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Покупка</a></li>
+                    <li class="dropdown">
+                        <a href="#">Таблицы</a>
+                        <div class="dropdown-content">
+                            <a href="Departmenti.html">Товары</a>
+                            <a href="Expenses.html">Клиенты</a>
+                            <a href="Types_of_expenses.html">Продажи</a>
+                        </div>
+                    </li>
+                    <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+
+
+                <h2>Добро пожаловать</h2>
+                <p class="special-paragraph">Здесь вы можете посмотреть какие товары у нас есть в наличие а так же можете их приобрести</p>
+
+
+            </main>
+        </div>
+        <footer>
+            &copy; <strong><em>Banochka_LitEnergy</em></strong>
+            <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+            <button id="logout-btn" class="logout-button">Выйти</button>
+        </footer>
+            <script>
+                function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+                document.getElementById('logout-btn').addEventListener('click', () => {
+                window.location.href = 'AuthPage.html';
+                });
+            </script>
+    </section> 
+</body>
+</html>
