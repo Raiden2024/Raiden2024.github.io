@@ -1,81 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет магазин</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-             min-height: 100vh; /* минимальная высота контейнера равна высоте окна браузера */
-         }
-
-        /* Дополнительные стили для навигации для лучшего вида */
-    .horizontal-menu {
-        background-color: #f0f0f0;
-        padding: 10px 0;
-    }
-
-    .horizontal-menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 20px; /* отступы по бокам */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px; /* устанавливаем максимальную ширину, чтобы меню не растягивалось по всей ширине экрана */
-        margin: 0 auto; /* отцентровываем меню по горизонтали */
-    }
-
-    .horizontal-menu ul li {
-        margin-right: 10px;
-    }
-        .logout-button-container {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-        }
-
-        .main-content {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .vertical-menu {
-           width: 200px;
-            padding-right: 20px;
-        }
-        .vertical-menu ul{
-           list-style-type: none;
-           padding: 0;
-        }
-
-        .content {
-            flex: 1;
-        }
-        .special-paragraph {
-            font-size: 1.2rem; /* Больше размер шрифта */
-            line-height: 1.6;   /* Увеличенная межстрочность */
-            color: #333; /* Цвет текста */
-        }
-    </style>
+        <meta charset="UTF-8">
+        <title>Интернет магазин</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
 </head>
 <body>
     <section class="container">
         <header>
-            <h1>Интернет магазин</h1>
+            <h1>Инетернет магазин</h1>
         </header>
 
         <nav class="horizontal-menu">
@@ -91,7 +28,6 @@
                     </div>
                 </li>
                 <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
-                <li class="logout-button-container"><button id="logout-btn" class="logout-button">Выйти</button></li>
             </ul>
         </nav>
 
@@ -113,24 +49,27 @@
             </nav>
 
             <main class="content">
+
+
                 <h2>Добро пожаловать</h2>
                 <p class="special-paragraph">Здесь вы можете посмотреть какие товары у нас есть в наличие а так же можете их приобрести</p>
+
+
             </main>
         </div>
-
         <footer>
             &copy; <strong><em>Banochka_LitEnergy</em></strong>
             <button class="scroll-to-top" onclick="scrollToTop()">Наверх</button>
+            <button id="logout-btn" class="logout-button">Выйти</button>
         </footer>
-    </section>
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-        document.getElementById('logout-btn').addEventListener('click', () => {
-            window.location.href = 'AuthPage.html';
-        });
-    </script>
+            <script>
+                function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+                document.getElementById('logout-btn').addEventListener('click', () => {
+                window.location.href = 'AuthPage.html';
+                });
+            </script>
+    </section> 
 </body>
 </html>
