@@ -168,7 +168,7 @@ nav {
 /*? Анимация для увеличения высоты контейнера */
 .horizontal-menu .dropdown:hover ~ li:last-child {
     transition: margin-left 0.3s ease;
-     margin-left: calc(100% - 60%); /* Увеличенное расстояние сдвига */
+     margin-left: calc(100% - 50%); /* Увеличенное расстояние сдвига */
 }
 
 .horizontal-menu li:last-child {
