@@ -4,28 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет магазин</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <style>
-        .horizontal-menu ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Align items vertically in the center */
-        }
-        
-        .horizontal-menu ul li {
-            margin-right: 10px; /* Adjust spacing as needed */
+        body {
+            margin: 0;
+            font-family: sans-serif;
         }
 
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+             min-height: 100vh; /* минимальная высота контейнера равна высоте окна браузера */
+         }
+
+        /* Дополнительные стили для навигации для лучшего вида */
+    .horizontal-menu {
+        background-color: #f0f0f0;
+        padding: 10px 0;
+    }
+
+    .horizontal-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px; /* отступы по бокам */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px; /* устанавливаем максимальную ширину, чтобы меню не растягивалось по всей ширине экрана */
+        margin: 0 auto; /* отцентровываем меню по горизонтали */
+    }
+
+    .horizontal-menu ul li {
+        margin-right: 10px;
+    }
         .logout-button-container {
             display: flex;
-            align-items: center; /* Align items vertically in the center */
-             margin-left: auto; /* Push the button to the right */
+            align-items: center;
+            margin-left: auto;
         }
-    
+
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .vertical-menu {
+           width: 200px;
+            padding-right: 20px;
+        }
+        .vertical-menu ul{
+           list-style-type: none;
+           padding: 0;
+        }
+
+        .content {
+            flex: 1;
+        }
+        .special-paragraph {
+            font-size: 1.2rem; /* Больше размер шрифта */
+            line-height: 1.6;   /* Увеличенная межстрочность */
+            color: #333; /* Цвет текста */
+        }
     </style>
 </head>
 <body>
@@ -34,22 +78,22 @@
             <h1>Интернет магазин</h1>
         </header>
 
-       <nav class="horizontal-menu">
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="order.html">Покупка</a></li>
-        <li class="dropdown">
-            <a href="#">Таблицы</a>
-            <div class="dropdown-content">
-                <a href="Departmenti.html">Товары</a>
-                <a href="Expenses.html">Клиенты</a>
-                <a href="Types_of_expenses.html">Продажи</a>
-            </div>
-        </li>
-        <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
-        <li class="logout-button-container"><button id="logout-btn" class="logout-button">Выйти</button></li>
-    </ul>
-</nav>
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="order.html">Покупка</a></li>
+                <li class="dropdown">
+                    <a href="#">Таблицы</a>
+                    <div class="dropdown-content">
+                        <a href="Departmenti.html">Товары</a>
+                        <a href="Expenses.html">Клиенты</a>
+                        <a href="Types_of_expenses.html">Продажи</a>
+                    </div>
+                </li>
+                <li><a href="http://www.fsb.ru/" target="_blank" rel="noopener" class="normal-weight"><em>Кодекс чести</em></a></li>
+                <li class="logout-button-container"><button id="logout-btn" class="logout-button">Выйти</button></li>
+            </ul>
+        </nav>
 
         <div class="main-content">
             <nav class="vertical-menu">
