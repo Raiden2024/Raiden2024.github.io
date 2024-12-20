@@ -34,7 +34,7 @@ header {
     font-size: 1.5em; /* Размер текста для верхнего заголовка */
     text-align: center; /* Выравнивание по центру */
     padding: 6px; /* Отступы вокруг текста */
-    background: linear-gradient(135deg, #4f5dfc, #431a7c); /* Диагональный линейный градиент */
+    background: linear-gradient(90deg, #647dee,  #7f53ac); /* Диагональный линейный градиент */
     color: #ffe; /* Цвет текста */
     }
 
